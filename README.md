@@ -16,6 +16,17 @@ This repository contains a PyTorch implementation of the paper:
 
 Learning robust feature descriptors from multiple views plays an important role in image matching and its downstream tasks. Due to various uncertainty factors from illumination to viewpoint, robust feature matching remains a challenging task; the generalization property of learned feature descriptors has also remained poorly understood. Our intuition is that ensemble learning can assemble a collection of feature descriptors by mining richer information for each pixel, which can lead to improved robustness and generalization properties. In this paper, we propose a new image feature description method named Orthogonal Descriptor Network (OD-Net), which describes a pixel by a multi-branch structure and then fuses them. To avoid the model being trapped into an ill-posed solution and encourage the network to mine complementary information, we have designed an orthogonality constraint and modeled it as a novel loss function. It is worth noting that the idea of orthogonal feature extraction is general and can be easily plugged into many existing frameworks. Extensive experiments have been carried out to show that our OD-Net can produce better results than the current state-of-the-art on a variety of image-matching tasks and evaluation metrics.
 
+## Results
+· The results of camera pose estimation on 3000 image pairs in the MegaDepth dataset.
+![](./assert/fig1.png)
+· Mean Matching Accuracy (MMA) and Matching Score (M.Score) using a fixed threshold
+of 3 pixels on HPatches.
+![](./assert/Table1.png)
+· Rotation Estimation Accuracy (REA) and Translation Estimation Accuracy (TEA) on the NMNet dataset.
+![](./assert/Table4.png)
+· Correspondences on some typical image pairs found by different methods.
+![](./assert/vis.jpg)
+
 ## Requirements
 ```bash
 # Create conda environment with torch 1.0.1 and CUDA 10.0
