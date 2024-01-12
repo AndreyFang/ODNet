@@ -31,7 +31,7 @@ pip install opencv-contrib-python==3.4.2.17
 ```
 
 ## Pretrained Model
-The pretrained model is provided in pretrained/
+The pretrained model is provided in [link](https://drive.google.com/file/d/1ikCvcto7HNSjI2yu1vpExmMjneFd2dQR/view?usp=drive_link). Please download it into pretrained/ for using.
 
 ## Dataset
 Please download the preprocessed MegaDepth dataset using this [link](https://drive.google.com/file/d/1-o4TRLx6qm8ehQevV7nExmVJXfMxj657/view?usp=sharing).
